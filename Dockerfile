@@ -3,7 +3,9 @@ RUN apt update                              && \
     apt -y upgrade                          && \
     apt install -y curl                     && \
     apt install -y python3                  && \
+    apt install -y python3-pip              && \
     apt install -y python3-virtualenv       && \
+    apt install -y python3-poetry           && \
     echo done
 
 USER ubuntu
