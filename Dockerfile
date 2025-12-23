@@ -10,6 +10,7 @@ RUN apt update                              && \
 
 USER ubuntu
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh  && \
+    curl -fsSL https://github.com/cashapp/hermit/releases/download/stable/install.sh | /bin/bash && \
     echo done
 
 COPY bashrc /home/ubuntu/.bashrc

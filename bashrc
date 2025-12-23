@@ -118,3 +118,4 @@ fi
 
 . "$HOME/.local/bin/env"
 
+export PATH=$HOME/bin:$PATH
