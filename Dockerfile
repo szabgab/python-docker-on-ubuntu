@@ -2,6 +2,7 @@ FROM ubuntu:25.10
 RUN apt update                              && \
     apt -y upgrade                          && \
     apt install -y curl                     && \
+    apt install -y vim                      && \
     apt install -y python3                  && \
     apt install -y python3-pip              && \
     apt install -y python3-virtualenv       && \
