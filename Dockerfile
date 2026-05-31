@@ -14,6 +14,11 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh  && \
     curl -fsSL https://github.com/cashapp/hermit/releases/download/stable/install.sh | /bin/bash && \
     echo done
 
+RUN echo Install Antigravity   && \
+    curl -fsSL https://antigravity.google/cli/install.sh | bash  && \
+    echo done
+
+
 COPY bashrc /home/ubuntu/.bashrc
 USER root
 RUN chown ubuntu:ubuntu /home/ubuntu/.bashrc
