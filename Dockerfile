@@ -1,4 +1,4 @@
-FROM ubuntu:25.10
+FROM ubuntu:26.04
 RUN apt update                              && \
     apt -y upgrade                          && \
     apt install -y curl                     && \
