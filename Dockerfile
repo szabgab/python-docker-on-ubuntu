@@ -8,6 +8,7 @@ RUN apt update                              && \
     apt install -y python3-virtualenv       && \
     apt install -y python3-poetry           && \
     apt install -y gawk                     && \
+    apt install -y unzip                    && \
     echo done
 
 USER ubuntu
